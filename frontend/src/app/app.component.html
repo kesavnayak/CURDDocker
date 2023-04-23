@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  <ul class = "navbar-nav">
+      <li class = "nav-item">
+          <a routerLink="employees" routerLinkActive="active" class="nav-link" >Employee List</a>
+      </li>
+      <li class = "nav-item">
+          <a routerLink="create-employee" routerLinkActive="active" class="nav-link" >Add Employee</a>
+      </li>
+  </ul>
+</nav>
+
+<div class="card">
+  <div class="card-header">
+    <h1 class="text-center">{{title | titlecase}}</h1>
+  </div>
+  <div class="card-body">
+    <div class = "container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
